@@ -1,4 +1,4 @@
-n = int(input("Numero:"))
+n = int(input("Numero: "))
 enc = str("")
 
 res = list(map(int, str(n)))
