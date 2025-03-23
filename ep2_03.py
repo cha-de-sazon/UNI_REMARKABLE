@@ -7,18 +7,16 @@ p2 = float(input("Prova 2: "))
 cf = int()
 
 notas = ["F", "D", "C", "B", "A"]
+notas2 = [5, 6, 7.5, 9]
 
 t = (t1 + t2 + t3) / 3
 nf = (t / 5) + (0.4 * (p1 + p2))
 
-if nf >= 5:
-    cf += 1
-    if nf >= 6:
+for i in notas2:
+    if nf >= i:
         cf += 1
-        if nf >= 7.5:
-            cf += 1
-            if nf >= 9:
-                cf += 1
+    else:
+        break
 
 cfx = str(notas[cf])
 
